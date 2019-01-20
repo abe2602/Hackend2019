@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="845f2273-d37a-4b92-90e5-fdcfe6a79ec1" ChangeDateTime="01/19/2019 22:45:43">
+    <Property Name="ElementName" Value="[dbo].[RouteBuses].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[RouteBuses]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RouteId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="907c702b-32b8-4c28-b015-9cbbbdfa8525" ChangeDateTime="01/19/2019 22:55:15">
+    <Property Name="ElementName" Value="[dbo].[BusStop].[Long]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[BusStop]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Longitude" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="650ca7a7-f21c-43d6-beef-511430c70c60" ChangeDateTime="01/19/2019 22:58:02">
+    <Property Name="ElementName" Value="[dbo].[FK_RouteBuses_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[RouteBuses]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_RouteBuses_ToTBus]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="31d03658-d03c-4ec0-a7ef-c5552bf5cb0f" ChangeDateTime="01/19/2019 22:58:08">
+    <Property Name="ElementName" Value="[dbo].[FK_RouteBuses_ToTBus]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[RouteBuses]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_RouteBuses_ToBus]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b2e8c0e5-bb2b-414e-85a0-98ad6b695176" ChangeDateTime="01/19/2019 22:58:18">
+    <Property Name="ElementName" Value="[dbo].[FK_RouteBuses_ToTable_1]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[RouteBuses]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_RouteBuses_ToRoute]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="28f64c27-a979-4924-a042-d4c0cc967dbd" ChangeDateTime="01/19/2019 23:02:59">
+    <Property Name="ElementName" Value="[dbo].[RouteStops].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[RouteStops]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="StopId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="af91c255-aad8-4e93-9d76-7a21dd588b44" ChangeDateTime="01/19/2019 23:55:47">
+    <Property Name="ElementName" Value="[dbo].[Route].[Number]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Route]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ShortName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fcccb651-b69f-4eee-a178-5ca16b9a082e" ChangeDateTime="01/19/2019 23:55:51">
+    <Property Name="ElementName" Value="[dbo].[Route].[Direction]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Route]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LongName" />
+  </Operation>
+</Operations>
